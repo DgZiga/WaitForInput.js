@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<button id="wait">Wait</button>
+		<button id="proceed">Proceed</button>
+		<span id="result"></span>
+		<!-- jQUERY IS INCLUDED IN THIS EXAMPLE ONLY AS A MEAN TO MAKE THE CODE MORE READABLE, BUT IT'S NOT REQUIRED FOR THE LIBRARY TO WORK -->
+		<script type='text/javascript' src="jquery-3.2.1.min.js"></script>
+		<script type='text/javascript' src="../WaitForInput.js"></script>
+		<script type='text/javascript'>
+			$("#wait").click(async function(){
+				$("#result").innerHTML = "Waiting...";
+				WaitForInput.bindProceed($("#proceed"));
+				await WaitForInput.awaitConfirm();
+				$("#result").innerHTML += " Completed!";
+			});
+		</script>
+	</body>
+</html>
