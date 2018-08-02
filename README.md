@@ -31,8 +31,8 @@ You can see how this would get really bad, really fast: Namespace would be incre
 An example of the library at work can be found just a few lines up above.
 This library is a single JS file containing a single class with static functions only. These are:
 
-| Function  | Parameters | Description |
-| ------------- | ------------- |
+| Function  |  Parameters  | Description |
+| ------------- | ------------- | ------------- |
 | * wait  | none | Generator Function, **internal use only**  |
 | awaitConfirm  | ms | The function that has to be called when stopping the code. "ms" is the number of milliseconds after which the request will expire.  |
 | proceed  | obj | The function that has to be called when wanting to resume the code. "obj" is the onject that called this function (the DOM Element, in most cases)  |
