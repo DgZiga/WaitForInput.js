@@ -3,7 +3,7 @@ A lightweigh, pure-js library that will let you wait for an external input in a 
 
 ### Requirements
 This library does not require anything else to work: you can just download it, include it and you're good to go
-(The examples **do** include `jQuery 3.2.1` but it's just for the sake of them being easy to read and understand, **it's not required**)
+(the examples **do** include `jQuery 3.2.1` but it's just for the sake of them being easy to read and understand, **it's not required**)
 
 ### Why?
 At first you might wonder why this even exists and to answer that, I'll give a little example
@@ -25,7 +25,7 @@ $("#wait").click(async function(){
     $("#result")[0].innerHTML += " Completed!";
 });
 ```
-You can see how this would get really bad, really fast: Namespace would be incredibly polluted, the could would be a nightmare to read and the function would be broken into pieces not based on what that piece of code is doing, but purely based on how that same code is reached.
+You can see how this would get really bad, really fast: namespace could become incredibly polluted, it would be a nightmare to read and the functions would be broken into pieces not based on what that piece of code is doing, but purely based on how that same code is reached.
 
 ## How do you use this?
 An example of the library at work can be found just a few lines up above.
